@@ -11,6 +11,7 @@ import DevelopersSection from './components/DevelopersSection';
 import LatestUpdates from './components/LatestUpdates';
 import Footer from './components/Footer';
 import FloatingVoiceChat from './components/FloatingVoiceChat';
+import { WavyBackground } from './components/ui/wavy-background';
 
 const App: React.FC = () => {
   return (
@@ -21,7 +22,9 @@ const App: React.FC = () => {
         <Hero />
 
         <div className="mt-16">
+          {/* <WavyBackground> */}
           <Omnibox />
+          {/* </WavyBackground> */}
         </div>
 
         <section className="py-20 lg:py-40 bg-white">

@@ -323,6 +323,7 @@ const Omnibox: React.FC = () => {
   const activeFeature = features.find(f => f.id === activeTabId) || features[0];
 
   return (
+
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50 py-16 px-4">
       <div className="container mx-auto max-w-7xl">
 
