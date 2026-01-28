@@ -24,7 +24,8 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-x-8">
           <a href="/" className="flex items-center gap-1">
             <div className="flex text-black font-bold text-xl tracking-tighter items-center">
-              <span className="mr-0.5">II</span>Marichi Solutions
+              <img src="/logo.png" alt="Logo" width={24} height={24} />
+              <span className="mr-0.5"></span>Marichi Solutions
             </div>
           </a>
 

@@ -214,7 +214,7 @@ const PhoneMockup: React.FC<{ data: FeatureData['chatData'] }> = ({ data }) => {
   return (
     <div className="w-[320px] h-[620px] bg-black rounded-[48px] p-3  relative overflow-hidden mx-auto lg:mx-0">
       {/* Notch */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-36 h-7 bg-black rounded-b-3xl z-20"></div>
+      <div className="absolute top-0 inset-x-0 mx-auto w-36 h-7 bg-black rounded-b-3xl z-20"></div>
 
       {/* Screen Content */}
       <div className="w-full h-full bg-[#E5DDD5] rounded-[40px] overflow-hidden flex flex-col relative">
@@ -329,13 +329,13 @@ const Omnibox: React.FC = () => {
 
         {/* Tabs */}
         <div className="flex justify-center mb-10">
-          <div className="inline-flex bg-white p-2 rounded-2xl gap-2 border border-neutral-100 overflow-x-auto max-w-full">
+          <div className="inline-flex bg-white p-2 rounded-2xl gap-2 overflow-x-auto max-w-full">
             {features.map((feature) => (
               <button
                 key={feature.id}
                 onClick={() => setActiveTabId(feature.id)}
                 className={`flex items-center gap-2 px-5 py-3 text-sm font-semibold rounded-xl transition-all whitespace-nowrap ${activeTabId === feature.id
-                  ? 'bg-black text-white shadow-md scale-105'
+                  ? 'border border-neutral-300 text-black '
                   : 'text-neutral-600 hover:text-black hover:bg-neutral-50'
                   }`}
               >
@@ -347,15 +347,13 @@ const Omnibox: React.FC = () => {
         </div>
 
         {/* Main Omnibox */}
-        <div className="relative bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-neutral-100 overflow-hidden">
+        <div className="relative bg-white rounded-3xl p-8 lg:p-12 border border-neutral-200 overflow-hidden">
 
           <div className="grid lg:grid-cols-2 gap-16 w-full items-center relative z-10">
 
             {/* Left Content */}
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start order-2 lg:order-1">
-              <div className="w-20 h-20 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl shadow-lg flex items-center justify-center mb-6 text-white">
-                {React.cloneElement(activeFeature.icon as React.ReactElement, { size: 36 })}
-              </div>
+
 
               <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
                 {activeFeature.title}

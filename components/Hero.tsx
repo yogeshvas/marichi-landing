@@ -1,11 +1,14 @@
 
 import React from 'react';
 import SplitText from './SplitText';
+import Squares from './Squares';
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-24 pb-12 lg:pt-32 text-center">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <section className="relative pt-24 pb-12 lg:pt-32 text-center overflow-hidden">
+
+
+      <div className="container mx-auto px-4 max-w-4xl relative z-10">
         <h1 className="">
 
         </h1>

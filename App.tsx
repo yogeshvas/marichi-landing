@@ -12,6 +12,7 @@ import LatestUpdates from './components/LatestUpdates';
 import Footer from './components/Footer';
 import FloatingVoiceChat from './components/FloatingVoiceChat';
 import { WavyBackground } from './components/ui/wavy-background';
+import Squares from './components/Squares';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,8 @@ const App: React.FC = () => {
       <Navbar />
 
       <main id="content">
+
+
         <Hero />
 
         <div className="mt-16">
