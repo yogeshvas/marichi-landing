@@ -275,7 +275,7 @@ const StandOutCrowdCTA: React.FC = () => {
           <p> Stand out from crowd</p>
           <RotatingText
             texts={['using', 'whatsapp']}
-            mainClassName="px-2 sm:px-2 md:px-3 bg-red-300 text-black overflow-hidden py-2 sm:py-1 md:py-2 justify-center rounded-lg"
+            mainClassName="px-2 sm:px-2 md:px-3 bg-red-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
             staggerFrom={"last"}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
@@ -303,7 +303,7 @@ const StandOutCrowdCTA: React.FC = () => {
       </div>
 
       {/* Canvas Layer (Stacked below) */}
-      <div ref={canvasContainerRef} className="relative w-full h-[400px] overflow-hidden">
+      <div ref={canvasContainerRef} className="relative w-full h-[500px] overflow-hidden">
         <canvas
           ref={canvasRef}
           className="absolute top-0 left-0 w-full h-full block"
