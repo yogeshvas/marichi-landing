@@ -8,7 +8,7 @@ import FeaturedCards from './components/FeaturedCards';
 import StorySlides from './components/StorySlides';
 import TeamSection from './components/TeamSection';
 import DevelopersSection from './components/DevelopersSection';
-import LatestUpdates from './components/LatestUpdates';
+import CaseStudies from './components/CaseStudies';
 import Footer from './components/Footer';
 import FloatingVoiceChat from './components/FloatingVoiceChat';
 import { WavyBackground } from './components/ui/wavy-background';
@@ -48,7 +48,7 @@ const App: React.FC = () => {
 
         <DevelopersSection />
 
-        <LatestUpdates />
+        <CaseStudies />
 
         <StandOutCrowdCTA />
       </main>
