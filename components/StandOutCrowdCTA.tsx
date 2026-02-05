@@ -271,11 +271,11 @@ const StandOutCrowdCTA: React.FC = () => {
 
       {/* Content Section (Stacked on top) */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mb-8">
-        <h2 className="flex items-center gap-4 text-4xl md:text-6xl font-bold mb-6 text-neutral-900 tracking-tight">
-          <p> Stand out from the</p>
+        <h2 className="flex flex-col items-center gap-4 text-4xl md:text-6xl font-bold mb-6 text-neutral-900 tracking-tight">
+          <p> Stand out from crowd</p>
           <RotatingText
-            texts={["crowd", 'using', 'whatsapp', 'commerce']}
-            mainClassName="px-2 sm:px-2 md:px-3 bg-red-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+            texts={['using', 'whatsapp']}
+            mainClassName="px-2 sm:px-2 md:px-3 bg-red-300 text-black overflow-hidden py-2 sm:py-1 md:py-2 justify-center rounded-lg"
             staggerFrom={"last"}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
